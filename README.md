@@ -1,3 +1,2 @@
-# slideshow
-a slideshow presentation about some tecnologies
-Esta es una presentacion slideshow con efecto fade en la transicion entre articulos. Y puedes usarla para lo que quieras
+# Web development files
+in this repository you will find a bunch of work based on web development. you can use whatever you want. 
