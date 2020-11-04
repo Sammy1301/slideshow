@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(235, 233, 233);
+}
+/* #region navegacion*/
+
+header{
+    display: flex;
+    width: 100%; height: 600px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.login_btn{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding-bottom: 5px;padding-top: 3px;
+    padding-left: 20px;padding-right: 20px;
+}
+.login_btn:hover{
+    background-color: #fff;
+    color:  #184656;
+}
+h1{
+    width: 100%;
+    font-size: 50px;
+    line-height: 90px;
+    letter-spacing: 12px;
+}
+.texto p{
+    width: 60%;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 8px;
+}
+.texto{
+    width: 45%;
+}
+/*.hijo{
+    background-color: darkmagenta;
+    width: 80px;
+    height: 90px;
+    margin: 5px 10px;
+}*/
+/* #endregion */
+/* #region header*/
+header img{
+    width: 40%;
+    border-radius: 70%;
+}
+header{
+    background-image: url('./13077.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+nav{
+    background-color: #184656;
+    width: 100%;
+    height: 70px;
+}
+.contenedor{
+    width: 90%;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+}
+nav a:hover{
+    border-bottom: 2px solid #fff;
+}
+/* #endregion */
+/*body{
+    display: flex;
+    align-content:strech (toma en largo de todo el contenedor padre) | center (no hay que explicarlo) |flex-start | flex-end | baseline (lo alinea de acuerdo al texto)
+    justify-content: space-evenly;este trabaja con el eje horizontal
+    justify: center|| flex-end, start| space-between (da espacio entre los elementos (no bordes)) space-arround (da espacio entre todo, incluyendo los bordes)| 
+    space-evenly (el espacio entre los contenedores y el borde es el mismo);/*Trabaja con el eje vertical
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+/*h1{
+    width: 40%;
+    font-size: 60px;
+}*/
+/*
+    flex-flow: flex-direction y flex-wrap; este combina los dis mencionados anteriormente ||||  flex-wrap: wrap | nowrap | wrap-reverse;*/
+    /*flex-direction: row | row-reverse | column | column-reverse; Funcionan como float*/
+/* #region categorias*/
+.container_tarjetas{
+    margin: 0 auto;
+    width: 98%;
+    height: 500px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    
+}
+.tarjeta{
+    width: 20%;
+    height: 450px;
+    border: 2px solid;
+    border-color:#184656;
+    border-radius: 5px;
+    color: #184656;
+    overflow: auto;
+    padding: 8px; padding-top: 35px;
+    text-align: center;
+}
+.tarjeta h2{
+    line-height: 55px;
+    font-size: larger;
+    font-weight: 800;
+}
+.tarjeta p{
+    line-height: 27px;
+    font-size: larger;
+    font-weight: 600;
+}
+.tarjeta i{
+    justify-self: center;
+    font-size: 450%;
+}
+/* #endregion */
+/* #region responsive*/
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column-reverse;
+    }
+    .texto{
+        width:80%;
+        letter-spacing: 8px;
+    }
+    header img{
+        width: 50%;
+       
+    }
+    .tarjeta{
+        width: 90%;
+        height: 270px;
+        margin-top: 15px;
+        font-size: medium;
+        line-height: 35px;
+        overflow: scroll;
+    }
+    .tarjeta img{
+        width: 90px;
+        
+    }
+    .container_tarjetas{
+        width: 100%;
+        height: 950px;
+    }
+}
+/* #endregion */
+.gap{height: 600px;}
