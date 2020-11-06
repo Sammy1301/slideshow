@@ -1,27 +1,63 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none;  */
+    box-sizing: border-box;
 }
+/* #region navegacion */
 nav{
-    background-color: #1d7a27;
-    color: #fff;
+    background-color: #ffffff;
+    color: rgb(40, 161, 56);
+    height: 90px;
+   
+    z-index: 999;
 }
+
 .container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #1d7a27;
+    /* background-color: #fcfcfc; */
+    height: 70px;
+    z-index: 99;
     
 }
-.container img{
-    width: 80%;
+.icono img{
+    margin-top: 5px;
+    height: 80px;
 }
-a{
+.menu a{
     text-decoration: none;
     margin-left: 15px;
     font-weight: 800;
-    
+    transition: color 0.5s, border 0.5s;
+    color: rgb(40, 161, 56);
+    padding-bottom: 3px;
+}
+.menu .one:hover{
+    color: rgb(30, 97, 39);
+} 
+.results{
+    margin-left: 20px;
+    border: 2px rgb(40, 161, 56) solid;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all step-start ;
+    padding: 4px 10px 5px 10px;
+}
+.results:hover{
+    color: #fff;
+    background-color: rgb(40, 161, 56);
+    text-decoration: none;
+    border-color: #fff;
+}
+/* #endregion */
+/* #region carrusel*/
+.carousel{
+    background-image: url('./medico.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
 }
 .padre{
     margin: 0 auto;
@@ -31,22 +67,50 @@ a{
     align-items: center;
     justify-content: space-between;
     color:#fff;
+   
 }
 h1{
     font-size: 40px;
     line-height: 70px;
 }
-p{
+.padre p{
     font-size: 30px;
     line-height: 35px;
 }
 .padre img{
-    width: 95%;
+    width: 300px;
+    height: 200px;
 }
 .carousel-item{
     margin: 0 auto;
-    background-color: darkolivegreen;
 }
 .texto{
     width: 40%;
 }
+/* #endregion */
+/* #region servicios*/
+.servicios{
+    width: 95%;
+    height: 500px;
+    /* box-shadow: 2px 2px 5px black;
+    border-radius: 8px; */
+    margin: 0 auto;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(40, 161, 56);
+} 
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.imagenes img{
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+}
+.gap{
+    height: 500px;
+}
+/* #endregion */
+/* #region*/
