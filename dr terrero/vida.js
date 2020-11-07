@@ -3,27 +3,27 @@ function fecha(){
     var dat = new Date();
     
     switch(dat.getMonth()){
-        case 1: time.innerText =  "Enero"+" "+dat.getFullYear();
+        case 0: time.innerText =  "Enero"+" "+dat.getFullYear();
         break;
-        case 2: time.innerText =  "febrero"+" "+dat.getFullYear();
+        case 1: time.innerText =  "febrero"+" "+dat.getFullYear();
         break;
-        case 3: time.innerText =  "Marzo"+" "+dat.getFullYear();
+        case 2: time.innerText =  "Marzo"+" "+dat.getFullYear();
         break;
-        case 4: time.innerText =  "Abril"+" "+dat.getFullYear();
+        case 3: time.innerText =  "Abril"+" "+dat.getFullYear();
         break;
-        case 5: time.innerText =  "Mayo"+" "+dat.getFullYear();
+        case 4: time.innerText =  "Mayo"+" "+dat.getFullYear();
         break;
-        case 6: time.innerText =  "Junio"+" "+dat.getFullYear();
+        case 5: time.innerText =  "Junio"+" "+dat.getFullYear();
         break;
-        case 7: time.innerText =  "Julio"+" "+dat.getFullYear();
+        case 6: time.innerText =  "Julio"+" "+dat.getFullYear();
         break;
-        case 8: time.innerText =  "Agosto"+" "+dat.getFullYear();
+        case 7: time.innerText =  "Agosto"+" "+dat.getFullYear();
         break;
-        case 9: time.innerText =  "Septiembre"+" "+dat.getFullYear();
+        case 8: time.innerText =  "Septiembre"+" "+dat.getFullYear();
         break;
-        case 10: time.innerText =  "Octubre"+" "+dat.getFullYear();
+        case 9: time.innerText =  "Octubre"+" "+dat.getFullYear();
         break;
-        case 11: time.innerText =  "Noviembre"+" "+dat.getFullYear();
+        case 10: time.innerText =  "Noviembre"+" "+dat.getFullYear();
         break;
         default: time.innerText =  "Diciembre"+" "+dat.getFullYear();
         break;
@@ -32,10 +32,13 @@ function fecha(){
 window.addEventListener('scroll', servicios);
 function servicios(){
     var a = Math.round(window.scrollY);
-    if(a>=151){
+    if(a>=151 ){
         document.getElementById("imgs").style.display = "flex";
     }
     if(a>=400){
         document.getElementById("sono").style.display = "flex";
+    }
+    if(a>=578){
+        document.getElementById("cons").style.display = "flex";
     }
 }
