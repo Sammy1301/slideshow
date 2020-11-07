@@ -29,3 +29,13 @@ function fecha(){
         break;
     }
 }
+window.addEventListener('scroll', servicios);
+function servicios(){
+    var a = Math.round(window.scrollY);
+    if(a>=151){
+        document.getElementById("imgs").style.display = "flex";
+    }
+    if(a>=400){
+        document.getElementById("sono").style.display = "flex";
+    }
+}
