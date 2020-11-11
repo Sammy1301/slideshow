@@ -42,3 +42,11 @@ function servicios(){
         document.getElementById("cons").style.display = "flex";
     }
 }
+function modal(){
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("contacto").style.display = "flex";
+}
+function qmodal(){
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("contacto").style.display = "none";    
+}

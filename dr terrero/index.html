@@ -13,8 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body onload="fecha(); ">
+  <div id="modal" onclick="qmodal()"></div>
+  <div id="contacto">
+          <span>
+            <h2>Telefono: 809-566-5858</h2>
+            <h2>Correo: centrodiagnostico@gmail.com</h2>
+         </span> 
+  </div>
     <nav>
-
         <div class="container">
             <div class="icono">
                 <img src="./logo.png" alt="Logo">
@@ -23,7 +29,7 @@
                     <a href="#" class="one">Inicio</a>
                     <a href="#" class="one">Servicios</a>
                     <a href="#" class="one">Empresa</a>
-                    <a href="#" class="one">Contacto</a>
+                    <a href="#" class="one" onclick="modal();">Contacto</a>
                     <a href="https://www.terrero.probeta.com/" target="__blank" class="results">Resultados</a>
             </div>
             
@@ -165,7 +171,12 @@
     </main>
 
     <footer>
-      <p id="fecha" style="text-align: center;"></p>
+      <hr>
+      <span><p>Todos los derechos Reservados &copy;</p> <p id="fecha"></p></span>
+      <p>Email:centrodiagnostico@gmail.com <br>
+        Tel:809-522-5848 <br>
+        Dir: Calle restauracion #45 Edificio 5b
+      </p>
     </footer>
 </body>
 </html>
