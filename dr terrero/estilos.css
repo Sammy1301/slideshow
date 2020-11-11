@@ -8,7 +8,7 @@
 body{
     overflow-x: hidden;
 }
-/* #region navegacion */
+/* #region Navegacion */
 nav{
     background-color: #ffffff;
     color: rgb(40, 161, 56);
@@ -54,7 +54,7 @@ nav{
     border-color: #fff;
 }
 /* #endregion */
-/* #region carrusel*/
+/* #region Carrusel*/
 .carousel{
     background-image: url('./medico.png');
     background-attachment: fixed;
@@ -91,7 +91,7 @@ h1{
     width: 40%;
 }
 /* #endregion */
-/* #region servicios*/
+/* #region Servicios*/
 .servicios div{
     margin-top: 20px;
     margin-bottom: 90px;
@@ -141,7 +141,7 @@ h1{
     height: 500px;
 }
 /* #endregion */
-/* #region empresa*/
+/* #region Empresa*/
 .empresa{
     margin-top: 30px;
     margin: 0 auto;
@@ -168,7 +168,7 @@ h1{
 
 }
 /* #endregion */
-/* #region informacion relevante de la empresa*/
+/* #region Informacion relevante de la empresa*/
 .relevancia{
     color: rgb(40, 161, 56);
     display: flex;
@@ -185,5 +185,47 @@ h1{
 }
 .horario{
     vertical-align: center;
+}
+/* #endregion */
+
+/* #region Responsive*/
+@media only screen and (max-width: 768px){
+    /* #region Nav*/
+    
+    /* #endregion */
+
+    /* #region Carrusel*/
+    
+    /* #endregion */
+    
+    /* #region Servicios*/
+    
+    /* #endregion */
+
+    
+    /* #region Empresa*/
+    .empresa{
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjeta{
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+    }
+    /* #endregion */
+
+    /* #region Relevancia*/
+    
+    
+    .relevancia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe{
+        width: 768px;
+    }
+    /* #endregion */
 }
 /* #endregion */
