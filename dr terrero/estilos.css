@@ -206,7 +206,7 @@ h1{
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .relevancia p{
     align-items: center;
@@ -232,13 +232,40 @@ footer{
     /* #region Nav*/
     
     /* #endregion */
-
-    /* #region Carrusel*/
     
+    /* #region Carrusel*/
+    .padre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .padre img{
+        width: 350px;
+        height: 200px;
+    }
+    .padre p{
+        font-size: 20px;
+    }
     /* #endregion */
     
     /* #region Servicios*/
-    
+    .servicios{
+        height: 1100px;
+    }
+    .servicios img{
+        width: 50%;
+        height: 50%;
+    }
+    .imagenes{
+        left: 0px;
+        display: flex;
+    }
+    .sonografia{
+        right: 0px;
+    }
+    .consulta{
+        left: 0px;
+    }
     /* #endregion */
 
     
