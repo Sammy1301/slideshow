@@ -1,34 +1,22 @@
 function fecha(){
     var time = document.getElementById("fecha");
     var dat = new Date();
-    
-    switch(dat.getMonth()){
-        case 0: time.innerText =  "Enero"+" "+dat.getFullYear();
-        break;
-        case 1: time.innerText =  "febrero"+" "+dat.getFullYear();
-        break;
-        case 2: time.innerText =  "Marzo"+" "+dat.getFullYear();
-        break;
-        case 3: time.innerText =  "Abril"+" "+dat.getFullYear();
-        break;
-        case 4: time.innerText =  "Mayo"+" "+dat.getFullYear();
-        break;
-        case 5: time.innerText =  "Junio"+" "+dat.getFullYear();
-        break;
-        case 6: time.innerText =  "Julio"+" "+dat.getFullYear();
-        break;
-        case 7: time.innerText =  "Agosto"+" "+dat.getFullYear();
-        break;
-        case 8: time.innerText =  "Septiembre"+" "+dat.getFullYear();
-        break;
-        case 9: time.innerText =  "Octubre"+" "+dat.getFullYear();
-        break;
-        case 10: time.innerText =  "Noviembre"+" "+dat.getFullYear();
-        break;
-        default: time.innerText =  "Diciembre"+" "+dat.getFullYear();
-        break;
-    }
+    var months = ['Enero', 'Febrero', 'Marzo', 'Abril','Mayo', 'Junio', 'Julio', 'Agosto','Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    time.innerText = months[dat.getMonth()]+ " " +dat.getFullYear();
 }
+// var pantalla = window.innerWidth;
+// collapse(pantalla);
+// function collapse(x){
+//     // var menu = ;
+//     console.log(document.getElementById("menu"));
+//     if(x<=768){
+//         document.getElementById("menu").style.display = "flex";
+//         document.getElementById("menu").style.flexDirection = "column";
+//     }
+// }
+
+
+//#region animacion de servicios
 window.addEventListener('scroll', servicios);
 function servicios(){
     var a = Math.round(window.scrollY);
@@ -42,6 +30,7 @@ function servicios(){
         document.getElementById("cons").style.display = "flex";
     }
 }
+//#endregion
 function modal(){
     document.getElementById("modal").style.display = "block";
     document.getElementById("contacto").style.display = "flex";
@@ -50,3 +39,16 @@ function qmodal(){
     document.getElementById("modal").style.display = "none";
     document.getElementById("contacto").style.display = "none";    
 }
+
+
+$(document).ready(function(){
+    $(".logo").on("click", function(){
+
+    // $("#menu").css({"display": "flex", 
+    // "flex-direction":"column", 
+    // "z-index":"999", 
+    // "margin-top":"130px", 
+    // "align-items":"center"});
+  $("body").effect("shake");
+  })
+  });
