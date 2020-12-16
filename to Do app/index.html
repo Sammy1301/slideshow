@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div id="app">
+    <h1>{{title}}</h1>
+    <form @submit.prevent="addTodo">
+        <label for="newTodo">New Task</label>
+        <input v-model="newTodo" type="text" name="newTodo" id="newTodo">
+        <button type="submit" name="buttom" class="buttom add">Add</button>
+    </form>
+    <div class="gap"></div>
+    <button class="buttom all" @click="allDone">All Done</button>
+    <button class="buttom not" @click="notDone">Not Done</button>
+    <div class="gap"></div>
+   <ul>
+       <li v-for="items in list">
+          <span :class="{ done: items.done }">{{items.title}}</span> 
+          <span><input type="checkbox" v-model="items.done"></span>
+          <button @click="remove(items)">Remove</button>
+        </li>
+   </ul>
+   <button class="buttom remove" @click="removeAll">Remove All</button>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+    
+</body>
+</html>
