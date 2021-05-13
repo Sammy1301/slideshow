@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --primary-color: #F2CF1D;
+            --secundary-color: #F2BB16;
+            --gray-color: #9e9c9b;
+            --dark-color: #3f3e3e;
+            --light-color: #fff;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 70vw;
+            height: 3vh;
+            position: fixed;
+            left: 15%;
+            color: var(--light-color);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Oswald', sans-serif;
+        }
+        ul li{
+            display: inline-block;
+            font-size: 1.5rem;
+            padding: 15px;
+            cursor: pointer;
+        }
+        li:hover{
+            border-bottom: var(--light-color) 3px solid;
+        }
+        .banner{
+            display: flex;
+        }
+        .contenido-contenedor{
+            width: 35vw;
+            height: 100vh;
+            display: inline-block;
+            background-color: var(--dark-color);
+        }
+        .contenido{
+            position: relative;
+            left: 150px;
+            top: 200px;
+        }
+        h1{
+            color: var(--primary-color);
+            font-size: 5rem;
+            font-family: 'Anton', sans-serif;
+        }
+        p{
+            color:var(--secundary-color);
+            font-family: 'Oswald', sans-serif;
+        }
+        .foto{
+            display: flex;
+            width: 64vw;
+            height: 100vh;
+            background-color: var(--gray-color);
+            justify-content: center;
+        }
+        img{
+            position: relative;
+            transform: translateY(150px);
+            width: 40vw;
+            height: 40vh;
+        }
+        .icons{
+            position: absolute;
+            z-index: 99;
+            display: flex;
+            bottom: 200px;
+            left: 37vw;
+            width: 15vw;
+            height: 8vh;
+            gap: 15px;
+        }
+        .icons img{
+            width: 10vw;
+            height: 10vh;
+            /* transition: 0.5s all; */
+        }
+        .icons > img:hover{
+            transform: translateY(0.5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h2>Logo</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>Inicio</li>
+                        <li>Tienda</li>
+                        <li>Empresa</li>
+                        <li>Staff</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="contenido-contenedor">
+                <div class="contenido">
+                    <h1>Somos la mejor tienda del mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id accusamus vitae nulla omnis aut accusantium, obcaecati quos quia quaerat quasi voluptatibus officiis ipsa est pariatur distinctio in quis hic!
+                    Vel illum itaque non, eos minima ipsum expedita, possimus repellat esse adipisci ex earum! Beatae alias quisquam maiores culpa labore modi eaque, cum rem fugiat pariatur quia. Magnam, aperiam a?
+                    Soluta possimus consequatur molestias rerum? At optio enim similique ipsum illum pariatur autem sint excepturi soluta velit dolor maiores numquam facilis natus, magni cumque quod tempore itaque. Eveniet, voluptas illum?</p>
+                </div>
+            </div>
+            <div class="foto">
+                <img src="./img/bateria2.png" alt="imagen">
+            </div>  
+        </div>
+        <div class="icons">
+            <img src="./img/bateria2.png" alt="bateria">
+            <img src="./img/guitar.png" alt="guitar">
+            <img src="./img/piano.png" alt="piano">
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready( () => {
+            
+        });
+    </script>
+</body>
+</html>
